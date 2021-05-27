@@ -1,3 +1,5 @@
+/* eslint-disable object-curly-newline */
+/* eslint-disable class-methods-use-this */
 const { createCart, showCart, addProduct, removeProduct, login, signup } = require('./AuthRepository');
 
 class AuthController {

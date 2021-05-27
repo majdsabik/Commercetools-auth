@@ -14,13 +14,8 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "chai": "^4.3.4",
-    "chai-http": "^4.3.0",
     "eslint": "^7.26.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.23.2",
-    "mocha": "^8.4.0",
-    "nock": "^13.0.11",
-    "nyc": "^15.1.0"
+    "eslint-plugin-import": "^2.23.2"
   }
 }

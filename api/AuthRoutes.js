@@ -5,7 +5,7 @@ const Controller = new AuthController();
 const routes = express.Router();
 
 routes.post('/carts', Controller.createCart);
-routes.get( '/carts', Controller.showCart );
+routes.get('/carts', Controller.showCart);
 routes.post('/carts/add/:id', Controller.addToCart);
 routes.post('/carts/remove/:id', Controller.removeFromCart);
 routes.post('/customers', Controller.userSignup);

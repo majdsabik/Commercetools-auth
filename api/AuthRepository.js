@@ -1,6 +1,5 @@
 const axiosCart = require('./axiosCart');
 const axiosCustomer = require('./axiosCustomer');
-//require('dotenv').config();
 
 const createCart = async () => {
   const result = await axiosCart.post('/carts/', { anonId: process.env.anonId });
@@ -28,8 +27,9 @@ const login = async (customer) => {
 };
 
 const signup = async (customer) => {
-  customer.anonymousId = process.env.anonId;
-  const result = await axiosCustomer.post('/customers/', customer);
+  const customerClone = JSON.parse(JSON.stringify(customer));
+  customerClone.anonymousId = process.env.anonId;
+  const result = await axiosCustomer.post('/customers/', customerClone);
   return result;
 };
 
